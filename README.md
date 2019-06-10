@@ -1,2 +1,2 @@
-# PHP-Mailer-Temlate-Email
+# PHP-Mailer-Template-Email
 How to send emails with template...
