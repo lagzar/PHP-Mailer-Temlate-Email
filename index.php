@@ -13,12 +13,17 @@
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    $mail->Username = "xxxxxxx@mail.com";
+    $mail->Username = "xxxxx@mail.com";
     $mail->Password = "password";
-    $mail->SetFrom("xxxxxxx@mail.com","Registration Form");
+    $mail->SetFrom("xxxxx@mail.com","Registration Form");
     $mail->Subject = "Test";
     $mail->Body = $message;
-    $mail->AddAddress("xxxxxxx@mail.com");
+    $mail->AddEmbeddedImage('img/logo.png', 'logo_1u');
+    $mail->AddEmbeddedImage('img/txt.png', 'logo_2u');
+    $mail->AddEmbeddedImage('img/rad.png', 'logo_3u');
+    $mail->AddEmbeddedImage('img/soc_1.png', 'logo_4u');
+    $mail->AddEmbeddedImage('img/soc_2.png', 'logo_5u');
+    $mail->AddAddress("xxxxx@mail.com");
 
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
