@@ -13,12 +13,12 @@
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    $mail->Username = "samodaide@gmail.com";
-    $mail->Password = "golf123456";
-    $mail->SetFrom("samodaide@gmail.com","Registration Form");
+    $mail->Username = "xxxxxxx@mail.com";
+    $mail->Password = "password";
+    $mail->SetFrom("xxxxxxx@mail.com","Registration Form");
     $mail->Subject = "Test";
     $mail->Body = $message;
-    $mail->AddAddress("mark.hocevar@gmail.com");
+    $mail->AddAddress("xxxxxxx@mail.com");
 
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
