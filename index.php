@@ -1,5 +1,7 @@
 <?php
 
+  $variable = "mark";
+  
   require("PHPMailer/PHPMailer.php");
   require("PHPMailer/SMTP.php");
 
